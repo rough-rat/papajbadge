@@ -468,7 +468,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "papajbadge.kicad_pro",
+    "filename": "rzulta.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -507,7 +507,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "papajbadge.step",
+      "step": "rzulta.step",
       "svg": "",
       "vrml": ""
     },

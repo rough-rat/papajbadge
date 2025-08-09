@@ -33,3 +33,7 @@ fp-info-cache
 
 *.pcb3d
 *.step
+
+spam/**
+
+*.lck
