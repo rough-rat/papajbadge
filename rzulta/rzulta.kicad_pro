@@ -504,12 +504,12 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "production/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "rzulta.step",
       "svg": "",
-      "vrml": ""
+      "vrml": "rzulta.wrl"
     },
     "page_layout_descr_file": ""
   },
