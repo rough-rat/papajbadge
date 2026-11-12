@@ -1,0 +1,5 @@
+[toolchain]
+# nightly: the firmware uses unstable features (generic_const_exprs, type_alias_impl_trait)
+channel = "nightly-2026-07-30"
+targets = ["riscv32imc-unknown-none-elf"]
+components = ["clippy", "rustfmt"]

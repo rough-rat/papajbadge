@@ -1,0 +1,36 @@
+[package]
+name = "papajbadge"
+version = "0.2.136"
+edition = "2021"
+license = "MIT"
+
+[lib]
+# no_std firmware library: no test harness on the target
+test = false
+
+[dependencies]
+ch58x-hal = { git = "https://github.com/cr1tbit/ch58x-hal.git", branch = "main", features = ["default", "embassy"] }
+ch58x-rs-kit = { git = "https://github.com/cr1tbit/ch58x-rs-playground.git", branch = "main" }
+
+critical-section = "1.1.2"
+qingke = { version = "0.5.0", features = ["critical-section-impl"] }
+qingke-rt = { version = "0.5.0", features = ["highcode"] }
+embedded-hal-local = { version = "1.0.0-rc.2", package = "embedded-hal" }
+
+embassy-executor = { version = "0.7.0", features = ["nightly", "arch-riscv32", "executor-thread"] }
+embassy-futures = "0.1.1"
+embassy-sync = "0.6.2"
+embassy-time = "0.4.0"
+abc-note-stream = { git = "https://github.com/rough-rat/abc-note-stream" }
+
+[profile.dev]
+lto = false
+opt-level = 0
+
+[profile.release]
+panic = "abort"
+opt-level = "z"
+lto = false
+codegen-units = 1
+
+[workspace]
