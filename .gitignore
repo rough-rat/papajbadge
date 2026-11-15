@@ -33,6 +33,7 @@ fp-info-cache
 
 *.pcb3d
 *.step
+*.wrl
 
 spam/**
 
